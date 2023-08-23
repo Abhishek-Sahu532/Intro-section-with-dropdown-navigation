@@ -1,170 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-  <div class="contaier">
-
-    <div class="mobile-menu">
-
-      <div class="logo">
-        <img src="./images/logo.svg" alt="Logo">
+  <body>
+    <div class="contaier">
+      <div class="top-container">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="Logo" />
+        </div>
+        <div class="open-menu">
+          <img src="./images/icon-menu.svg" alt="Menu Button" />
+        </div>
       </div>
-      <div class="open-menu">
-        <img src="./images/icon-menu.svg" alt="Menu Button">
+
+      <div class="close-menu">
+        <img src="./images/icon-close-menu.svg" alt="" />
       </div>
 
-      <nav>
-        <ul>
-          <li>Features <img src="./images/icon-arrow-down.svg" alt="Drop Icon">
-            <ul>
-              <li><a href="#todo-list"><img src="./images/icon-todo.svg" alt="Icon TODO" srcset="">Todo List</a></li>
-              <li><a href="#calender"><img src="./images/icon-calendar.svg" alt="Icon Calender" srcset="">Calender</a>
-              </li>
-              <li><a href="#reminders"><img src="./images/icon-reminders.svg" alt="Icon reminders">Reminders</a></li>
-              <li> <a href="#Planning"><img src="./images//icon-planning.svg" alt="Icon #Planning">Planning</a></li>
-            </ul>
-          </li>
+      <div class="mobile-menu">
+        <nav>
+          <ul>
+            <li>
+              Features
+              <img src="./images/icon-arrow-down.svg" alt="Drop Icon" />
+              <ul>
+                <li>
+                  <a href="#todo-list"
+                    ><img
+                      src="./images/icon-todo.svg"
+                      alt="Icon TODO"
+                      srcset=""
+                    />Todo List</a
+                  >
+                </li>
+                <li>
+                  <a href="#calender"
+                    ><img
+                      src="./images/icon-calendar.svg"
+                      alt="Icon Calender"
+                      srcset=""
+                    />Calender</a
+                  >
+                </li>
+                <li>
+                  <a href="#reminders"
+                    ><img
+                      src="./images/icon-reminders.svg"
+                      alt="Icon reminders"
+                    />Reminders</a
+                  >
+                </li>
+                <li>
+                  <a href="#Planning"
+                    ><img
+                      src="./images//icon-planning.svg"
+                      alt="Icon #Planning"
+                    />Planning</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              Company <img src="./images/icon-arrow-down.svg" alt="Drop Icon" />
+              <ul>
+                <li><a href="#history">History</a></li>
+                <li><a href="#our-team">Our Team</a></li>
+                <li><a href="#blog">Blog</a></li>
+              </ul>
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-image-part">
+        <img src="./images/image-hero-mobile.png" alt="Mobile Image" />
+      </div>
 
+      <nav class="desktop-menu">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="Logo" />
+        </div>
 
-          <li>Company<img src="./images/icon-arrow-down.svg" alt="Drop Icon">
-            <ul>
-              <li>
+        <div class="left-part">
+          <div class="subnav">
+            <div class="subnavBtn">
+              Features
+              <img src="./images/icon-arrow-down.svg" alt="Drop Icon" />
+            </div>
+
+            <div class="subnav-content">
+              <div>
+                <a href="#todo-list"
+                  ><img
+                    src="./images/icon-todo.svg"
+                    alt="Icon TODO"
+                    srcset=""
+                  />Todo List</a
+                >
+              </div>
+              <div>
+                <a href="#calender"
+                  ><img
+                    src="./images/icon-calendar.svg"
+                    alt="Icon Calender"
+                    srcset=""
+                  />Calender</a
+                >
+              </div>
+              <div>
+                <a href="#reminders"
+                  ><img
+                    src="./images/icon-reminders.svg"
+                    alt="Icon reminders"
+                  />Reminders</a
+                >
+              </div>
+              <div>
+                <a href="#Planning"
+                  ><img
+                    src="./images//icon-planning.svg"
+                    alt="Icon #Planning"
+                  />Planning</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="subnav">
+            <div class="subnavBtn">
+              Company <img src="./images/icon-arrow-down.svg" alt="Drop Icon" />
+            </div>
+            <div class="subnav-content" id="company">
+              <div>
                 <a href="#history">History</a>
-              </li>
+              </div>
+              <div>
+                <a href="#our-team">Our Team</a>
+              </div>
+              <div>
+                <a href="#blog">Blog</a>
+              </div>
+            </div>
+          </div>
 
-              <li> <a href="#our-team">Our Team</a></li>
-              <li> <a href="#blog">Blog</a></li>
+          <div id="careersDiv" class="subnavBtn">
+            <a href="#careers">Careers</a>
+          </div>
+          <div id="aboutDiv" class="subnavBtn"><a href="#about">About</a></div>
+        </div>
 
-            </ul>
-
-          </li>
-          <ul></ul>
-          <li>Careers</li>
-          <li>About</li>
-
-        </ul>
+        <div class="right-part">
+          <div><button type="button" id="loginBtn">Login</button></div>
+          <div><button id="registerBtn" type="register">Register</button></div>
+        </div>
       </nav>
+      <!-- NAV PART ENDED HERE -->
+
+      <main>
+        <aside class="heading-part">
+          <div class="heading">
+            <h1>Make remote work</h1>
+          </div>
+          <div class="desc">
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+          </div>
+          <div class="learn-more-btn">
+            <button type="button">Learn more</button>
+          </div>
+          <div class="client-section">
+            <div class="client1">
+              <img src="./images/client-databiz.svg" alt="Client 1" />
+            </div>
+            <div class="client2">
+              <img src="./images/client-audiophile.svg" alt="Client 2" />
+            </div>
+            <div class="client3">
+              <img src="./images/client-meet.svg" alt="Client 3" />
+            </div>
+            <div class="client4">
+              <img src="./images/client-maker.svg" alt="" />
+            </div>
+          </div>
+        </aside>
+        <aside class="image-part">
+          <img src="./images/image-hero-desktop.png" alt="Image" />
+        </aside>
+      </main>
     </div>
-    <div class="mobile-image-part">
-      <img src="./images/image-hero-mobile.png" alt="Mobile Image">
-    </div>
 
-
-
-    <nav class="desktop-menu">
-      <div class="logo">
-        <img src="./images/logo.svg" alt="Logo">
-      </div>
-
-      <div class="left-part">
-        <div class="subnav">
-
-          <div class="subnavBtn">
-            Features <img src="./images/icon-arrow-down.svg" alt="Drop Icon">
-          </div>
-
-          <div class="subnav-content">
-
-            <div><a href="#todo-list"><img src="./images/icon-todo.svg" alt="Icon TODO" srcset="">Todo List</a></div>
-            <div>
-              <a href="#calender"><img src="./images/icon-calendar.svg" alt="Icon Calender" srcset="">Calender</a>
-            </div>
-            <div>
-              <a href="#reminders"><img src="./images/icon-reminders.svg" alt="Icon reminders">Reminders</a>
-            </div>
-            <div>
-              <a href="#Planning"><img src="./images//icon-planning.svg" alt="Icon #Planning">Planning</a>
-            </div>
-
-
-          </div>
-        </div>
-
-        <div class="subnav">
-          <div class="subnavBtn">
-            Company <img src="./images/icon-arrow-down.svg" alt="Drop Icon">
-          </div>
-          <div class="subnav-content" id="company">
-            <div>
-              <a href="#history">History</a>
-            </div>
-            <div>
-              <a href="#our-team">Our Team</a>
-            </div>
-            <div>
-              <a href="#blog">Blog</a>
-            </div>
-          </div>
-        </div>
-
-        <div id="careersDiv" class="subnavBtn"> <a href="#careers">Careers</a></div>
-        <div id="aboutDiv" class="subnavBtn"> <a href="#about">About</a></div>
-      </div>
-
-      <div class="right-part">
-        <div> <button type="button" id="loginBtn">Login</button></div>
-        <div> <button id="registerBtn" type="register">Register</button></div>
-
-      </div>
-
-
-    </nav>
-    <!-- NAV PART ENDED HERE -->
-
-
-    <main>
-      <aside class="heading-part">
-        <div class="heading">
-          <h1> Make remote work</h1>
-        </div>
-        <div class="desc">
-          <p>Get your team in sync, no matter your location. Streamline processes,
-            create team rituals, and watch productivity soar.</p>
-        </div>
-        <div class="learn-more-btn">
-          <button type="button"> Learn more </button>
-        </div>
-        <div class="client-section">
-          <div class="client1">
-            <img src="./images/client-databiz.svg" alt="Client 1">
-          </div>
-          <div class="client2">
-            <img src="./images/client-audiophile.svg" alt="Client 2">
-          </div>
-          <div class="client3">
-            <img src="./images/client-meet.svg" alt="Client 3">
-          </div>
-          <div class="client4">
-            <img src="./images/client-maker.svg" alt="">
-          </div>
-        </div>
-      </aside>
-      <aside class="image-part">
-        <img src="./images/image-hero-desktop.png" alt="Image">
-      </aside>
-    </main>
-
-  </div>
-
-  <!-- 
-
-
-
-  
-
--->
-
-</body>
-
+    <script src="menu.js"></script>
+  </body>
 </html>
