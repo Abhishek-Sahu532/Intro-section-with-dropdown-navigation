@@ -1,24 +1,25 @@
-body{
-    background-color: #F1F0E8;
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Fraunces:wght@700&family=Josefin+Sans:wght@300&family=Outfit&family=Overpass:wght@200&family=Poppins:ital,wght@0,100;0,400;1,700&family=Roboto&display=swap");
+
+
+body {
+   background-color: hsl(0, 0%, 98%);
+  padding: 0;
+  margin: 0;
 }
 
-a{
+a {
   text-decoration: none;
   color: hsl(0, 0%, 41%);
 }
 
-
-.desktop-menu{
-    display: flex ;
-    flex-direction: row;
-    margin: 30px ;
-    width: 100%;
+.desktop-menu {
+  display: flex;
+  flex-direction: row;
+  /* margin: 20px; */
+  width: 100%;
 }
 
-
-.logo{
+.logo {
   margin-top: 20px;
   margin-left: 30px;
 }
@@ -27,70 +28,73 @@ a{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-left: 50px;
 }
 
-
-
-.subnav .subnavBtn{
-    font-size: 18px;
+.subnav .subnavBtn {
+  font-size: 18px;
   border: none;
   outline: none;
   color: hsl(0, 0%, 41%);
-  padding: 20px 28px;
+  padding: 20px 22px;
   background-color: transparent;
 }
 
-.subnav-content{
-    background-color: hsl(0, 0%, 98%);
-    padding: 10px 10px;
-    width: fit-content;
-    margin-left: 25px;
-    height:130px;
-    z-index: 1;
-    border-radius: 15px;
-    display: none;
-    margin-top: -15px;
+.subnav-content {
+  padding: 10px 10px;
+  width: fit-content;
+  height: 130px;
+  z-index: 1;
+  border-radius: 15px;
+  display: none;
+  margin-top: -15px;
+  -webkit-box-shadow: 2px 4px 4px 0px rgba(148,142,148,1);
+  -moz-box-shadow: 2px 4px 4px 0px rgba(148,142,148,1);
+  box-shadow: 2px 4px 4px 0px rgba(148,142,148,1);
+}
+
+#company{
+   margin-left: 30px;
+   height: 90px;
 }
 
 .subnav-content a {
-    float: left;
-  }
-
-  .subnav-content div a{
-    margin-top: 10px;
-  }
-
-
-  .subnav:hover .subnav-content {
-    display: revert;
-    color: black;
-  }
-
-  .subnav .subnavBtn:hover{
-    color: black;
-  }
-  .subnav-content div a img{
-margin-right: 15px;
+  float: left;
 }
 
-#careersDiv, #aboutDiv{
+.subnav-content div a {
+  margin-top: 10px;
+}
+
+.subnav:hover .subnav-content {
+  display: revert;
+  color: black;
+}
+
+.subnav .subnavBtn:hover {
+  color: black;
+}
+.subnav-content div a img {
+  margin-right: 15px;
+}
+
+#careersDiv,
+#aboutDiv {
   margin-top: 20px;
   margin-left: 50px;
   font-size: 18px;
-
 }
 
-
-.right-part{
+.right-part {
   display: flex;
-flex-direction: row;
-margin-left: 32rem;
-margin-top: 20px;
-gap:20px ;
-/* justify-content: space-between; */
+  flex-direction: row;
+  margin-left: 32rem;
+  margin-top: 20px;
+  gap: 20px;
+  /* justify-content: space-between; */
 }
 
- #loginBtn{
+#loginBtn {
   background-color: transparent;
   outline: none;
   border: none;
@@ -98,17 +102,99 @@ gap:20px ;
   padding: 8px 10px;
 }
 
-
-#registerBtn{
+#registerBtn {
   background-color: transparent;
   padding: 8px 10px;
   outline: none;
   border-radius: 10px;
   color: hsl(0, 0%, 41%);
-  border:  hsl(0, 0%, 41%) 1px solid;
+  border: hsl(0, 0%, 41%) 1px solid;
 }
 
-#loginBtn:hover, #registerBtn:hover, #careersDiv:hover ,#aboutDiv:hover, a:hover {
+#loginBtn:hover,
+#registerBtn:hover,
+#careersDiv:hover,
+#aboutDiv:hover,
+a:hover {
   cursor: pointer;
   color: black;
+}
+
+/* <!-- NAV PART ENDED HERE --> */
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin: 0 200px 0 200px;
+  position:fixed;
+  top: 170px;
+  /* margin-top: -40px ;
+  padding: 150px auto 0 150px ; */
+ 
+}
+.heading-part .heading{
+  padding-right: 10rem;
+}
+.heading-part .heading h1 {
+  font-family: Epilogue, sans-serif;
+  font-size: 4rem;
+  
+  margin-top: 30px;
+  margin-right: 35px;
+  color: hsl(0, 0%, 8%);
+}
+
+.heading-part .desc {
+  padding-right: 12rem;
+
+}
+.heading-part .desc p{
+  font-family: Epilogue, sans-serif;
+  font-size: 13px;
+  margin-top: -30px;
+  line-height: 20px;
+  color: hsl(0, 0%, 41%);
+  padding-right: 4rem;
+}
+
+
+
+.learn-more-btn{
+  margin-top: 55px;
+}
+
+.learn-more-btn button{
+  font-size: 14px;
+  font-family: Epilogue, sans-serif;
+  padding: 12px;
+  width: 7rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color:  hsl(0, 0%, 8%);
+  color:  hsl(0, 0%, 98%);
+}
+
+.learn-more-btn button:hover{
+  background-color: hsl(0, 0%, 98%);
+  outline:auto;
+  color: hsl(0, 0%, 8%)
+}
+
+
+.client-section{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 7rem;
+}
+
+
+.image-part {
+margin-top: -50px;
+}
+
+.image-part img {
+  width: 350px;
+  height: auto
 }
