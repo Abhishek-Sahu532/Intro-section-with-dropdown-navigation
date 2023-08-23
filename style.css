@@ -138,7 +138,6 @@ main {
 .heading-part .heading h1 {
   font-family: Epilogue, sans-serif;
   font-size: 4rem;
-  
   margin-top: 30px;
   margin-right: 35px;
   color: hsl(0, 0%, 8%);
@@ -197,4 +196,135 @@ margin-top: -50px;
 .image-part img {
   width: 350px;
   height: auto
+}
+
+
+
+
+.mobile-image-part{
+  display: none;
+}
+
+/* CSS FOR MOBILE VIEW */
+
+
+
+.mobile-menu{
+  display: none;
+}
+
+
+@media screen and (max-width:375px) {
+  
+.mobile-menu{
+  display: flex;
+  flex-direction: row;
+ justify-content: space-between;
+
+}
+
+.image-part{
+  display: none;
+}
+.open-menu{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.desktop-menu{
+  display: none;
+}
+
+.mobile-menu nav{
+  display: none;
+}
+
+.mobile-image-part{
+  display: block;
+  margin-top: 15px;
+}
+
+.mobile-image-part img{
+
+  width: 100%;
+
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  position:static;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+.heading-part{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.heading-part .heading{
+  padding: 20px;
+ 
+}
+.heading-part .heading h1 {
+  font-size: 2rem;
+  /* margin: 0 20px 0 0; */
+  margin: 0;
+  text-align: center;
+
+}
+
+.heading-part .desc {
+  /* padding-right: 12rem; */
+  margin-top: 15px;
+  padding: 30px;
+  text-align: center ;
+
+}
+.heading-part .desc p{
+  font-size: 14px;
+  margin-top: -50px;
+  line-height: 20px;
+  color: hsl(0, 0%, 41%);
+  padding: 0px;
+}
+
+
+.learn-more-btn{
+  margin-top: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.client-section{
+  margin-top: 30px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; */
+  padding: 40px 30px;
+  margin: 0;
+}
+
+
+.client-section img{
+  width:60px;
+
+}
+
+ul{
+  list-style-type: none;
+}
 }
